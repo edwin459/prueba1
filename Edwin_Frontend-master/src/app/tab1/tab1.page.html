@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Registro de Producto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <form [formGroup]="Producto_Formulario">
+      <ion-item>
+        <ion-select formControlName="Tipo_Categoria" aria-label="Fruit" interface="popover" placeholder="Seleccionar tipo de categoria">
+          <ion-select-option value="Camisa">Camisa</ion-select-option>
+          <ion-select-option value="Camiseta">Camiseta</ion-select-option>
+          <ion-select-option value="Boxer">Boxer</ion-select-option>
+          <ion-select-option value="Pantalon">Pantalón</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-input formControlName="Color" type="text" label="Color" label-placement="floating" fill="solid" placeholder="Enter Color"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input formControlName="Talla" type="text" label="Talla" label-placement="floating" fill="solid" placeholder="Enter Talla"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input formControlName="DescripcionGeneral" type="text" label="DescripcionGeneral" label-placement="floating" fill="solid" placeholder="Enter Descripcion General"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input formControlName="Precio" type="number" label="Precio" label-placement="floating" fill="solid" placeholder="Enter Precio"></ion-input>
+      </ion-item>
+      <ion-button (click)="Agendar()" color="success">Registrar</ion-button>
+    </form>
+  </ion-list>
+</ion-content>

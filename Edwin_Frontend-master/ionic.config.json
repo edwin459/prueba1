@@ -1,0 +1,8 @@
+{
+  "name": "ppp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "154e49fa"
+}
