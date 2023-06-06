@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Registro de Producto
+      Registro de Items
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -11,10 +11,10 @@
     <form [formGroup]="Producto_Formulario">
       <ion-item>
         <ion-select formControlName="Tipo_Categoria" aria-label="Fruit" interface="popover" placeholder="Seleccionar tipo de categoria">
-          <ion-select-option value="Camisa">Camisa</ion-select-option>
-          <ion-select-option value="Camiseta">Camiseta</ion-select-option>
-          <ion-select-option value="Boxer">Boxer</ion-select-option>
-          <ion-select-option value="Pantalon">Pantalón</ion-select-option>
+          <ion-select-option value="Camisa">Camisas</ion-select-option>
+          <ion-select-option value="Camiseta">Camisetas</ion-select-option>
+          <ion-select-option value="Boxer">Boxers</ion-select-option>
+          <ion-select-option value="Pantalon">Pantalónes</ion-select-option>
         </ion-select>
       </ion-item>
       <ion-item>
@@ -29,7 +29,7 @@
       <ion-item>
         <ion-input formControlName="Precio" type="number" label="Precio" label-placement="floating" fill="solid" placeholder="Enter Precio"></ion-input>
       </ion-item>
-      <ion-button (click)="Agendar()" color="success">Registrar</ion-button>
+      <ion-button (click)="Agendar()" color="success">Register</ion-button>
     </form>
   </ion-list>
 </ion-content>
