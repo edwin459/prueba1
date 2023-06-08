@@ -1,0 +1,18 @@
+<ion-list>
+  <ion-item>
+    <ion-label>
+      <h1><i><b>INICIO DE SESIÓN</b></i></h1>
+    </ion-label>
+  </ion-item>
+  <form action="">
+    <ion-item>
+      <ion-input type="email" [(ngModel)]="email" name="email" label="Email" label-placement="floating" fill="solid" placeholder="Enter email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" label="Password" [(ngModel)]="password" name="password" label-placement="floating" fill="solid" placeholder="Enter password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="logIn()" fill="outline">LogIn</ion-button>
+    </ion-item>
+  </form>
+</ion-list>

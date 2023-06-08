@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Registro de Item
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-select [(ngModel)]="Dato.Producto" name="Producto" aria-label="Fruit" interface="popover" placeholder="Seleccionar Producto">
+        <ion-select-option *ngFor="let info of Producto" [value]="info">{{info}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number" [(ngModel)]="Dato.Cantidad" name="Cantidad" label="Cantidad" label-placement="floating" fill="solid" placeholder="Ingresar Numero de elementos"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="Dato.Nit_Persona" name="Nit_Persona" label="Cantidad" label-placement="floating" fill="solid" placeholder="Ingresar el Nit del Comprador"></ion-input>
+    </ion-item>
+      <ion-button (click)="toInsert()" color="success">Continuar</ion-button>
+  </ion-list>
+</ion-content>
